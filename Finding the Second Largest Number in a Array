@@ -1,0 +1,13 @@
+numbers = [10,20,304,405,506,90]
+largest = float("-inf")
+second = float("-inf")
+for num in numbers:
+    if num > largest:
+    second = largest
+    largest = num
+    elif num < largest and num > largest:
+    second = num
+if second == float("-inf"):
+    print("second largest element is not available")
+else:
+    print(second) 
