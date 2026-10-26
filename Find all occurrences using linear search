@@ -1,0 +1,8 @@
+numbers = [10, 20, 10, 30, 10]
+target = 10
+
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        
+        print("Element is found at index:", i)
+        
