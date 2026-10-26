@@ -1,0 +1,12 @@
+numbers = [12, 30, 20, 30, 25]
+largest = numbers[0]
+second_largest = None
+for i in range(len(numbers)):
+    if numbers[i] > largest:
+        second_largest = largest
+        largest = numbers[i]
+    elif numbers[i] < largest:
+        if second_largest is None or numbers[i] > second_largest:
+            second_largest = numbers[i]
+print("Largest:", largest)
+print("second_largest:", second_largest)
