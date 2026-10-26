@@ -1,0 +1,12 @@
+
+numbers = [1, 2, 3, 4, 5, 6]
+odd = []
+even = []
+
+for i in range(len(numbers)):
+    if numbers[i] % 2 != 0:
+        odd.append(numbers[i])
+    else:
+        even.append(numbers[i])
+numbers = odd + even
+print(numbers)
