@@ -1,0 +1,15 @@
+numbers = [1,2,3,4,5,6,7]
+prefix = []
+total = 0
+for num in numbers:
+    total += num
+    prefix.append(total)
+    
+left = 2
+right = 6
+if left == 0:
+    subarray_sum = prefix[right]
+else:
+    subarray_sum = prefix[right] - prefix[left - 1]
+print("prefix sum:", prefix)
+print("subarray sum:", subarray_sum)
