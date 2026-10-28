@@ -1,0 +1,11 @@
+numbers = [1,2,3,4,5,6,7,8,9]
+k = 3
+windows_sum = 0
+averages = []
+for i in range(k):
+    windows_sum += numbers[i]
+averages.append(windows_sum / k)
+for i in range(k, len(numbers)):
+    windows_sum = windows_sum - numbers[i - k] + numbers[i]
+    averages.append(windows_sum / k)
+print(averages)
