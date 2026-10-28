@@ -1,0 +1,12 @@
+numbers = [1,2,0,9,7,0,7]
+pos = 0
+for i in range(len(numbers)):
+    if numbers[i] != 0:
+        numbers[pos] = numbers[i]
+        pos += 1
+        
+while pos < len(numbers):
+    numbers[pos] = 0
+    pos += 1
+        
+print(numbers)
