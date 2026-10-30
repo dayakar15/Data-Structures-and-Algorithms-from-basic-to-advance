@@ -1,0 +1,9 @@
+numbers = [4, 7, 2, 7, 5, 4]
+seen = set()
+for num in numbers:
+    if num in seen:
+        print("number is found", num)
+        break
+    else:
+        seen.add(num)
+        
