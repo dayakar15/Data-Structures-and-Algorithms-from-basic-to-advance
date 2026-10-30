@@ -1,0 +1,11 @@
+text1 = "abcd"
+text2 = "cdab"
+
+if len(text1) != len(text2):
+    print(False)
+else:
+    combined = text1 + text2
+    if text2 in combined:
+        print(True)
+    else:
+        print(False)
