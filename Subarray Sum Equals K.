@@ -1,0 +1,16 @@
+numbers = [2, 1, 3, 2]
+k = 4
+prefix_sum = 0
+count = 0
+frequency = {0:1}
+for num in numbers:
+    prefix_sum += num
+    needed = prefix_sum - k
+    if needed in frequency:
+        count += frequency[needed]
+    if prefix_sum in frequency:
+        frequency[prefix_sum] += 1
+    else:
+        frequency[prefix_sum] = 1
+        
+print("number of subarrays:", count)
